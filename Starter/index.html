@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Bud || Starter</title>
+    <!----------normalize----->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-------font-awesome------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--------main css-------->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <section class="section-center">
+      <!-------form------>
+      <form class="grocery-form">
+        <div class="alert alert-danger">please enter value</div>
+        <h4>grocery bud</h4>
+        <div class="form-row">
+          <input type="text" class="form-input" placeholder="e.g. eggs" />
+          <button type="submit" class="btn submit-btn text-small">
+            submit
+          </button>
+        </div>
+      </form>
+      <!-----list----->
+      <div class="grocery-container">
+        <!-----list item------>
+        <div class="grocery-list">
+          <!-------grocery item----->
+          <article class="grocery-item">
+            <span class="title">apples</span>
+            <div class="container">
+              <!-- edit btn -->
+              <button type="button" class="edit-btn">
+                <i class="fa-solid fa-edit"></i>
+              </button>
+              <!------delete btn----->
+              <button type="button" class="delete-btn">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </article>
+          <!-------end of grocery item----->
+          <!-------grocery item----->
+          <article class="grocery-item">
+            <span class="title">oranges</span>
+            <div class="container">
+              <!-- edit btn -->
+              <button type="button" class="edit-btn">
+                <i class="fa-solid fa-edit"></i>
+              </button>
+              <!------delete btn----->
+              <button type="button" class="delete-btn">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </article>
+          <!-------end of grocery item----->
+        </div>
+        <!--------clear button-->
+        <button type="button" class="clear-btn text-small">clear item</button>
+      </div>
+    </section>
+  </body>
+</html>
